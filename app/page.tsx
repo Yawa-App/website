@@ -15,22 +15,22 @@ export default function Home() {
               <h1 className="text-4xl lg:text-7xl font-bold leading-tight text-gray-800">
                 Empowering Communities, Saving Lives
               </h1>
-              <p className="text-[2rem] tracking-tight text-gray-600">
+              <p className="text-[1.2rem] lg:text-[2rem] tracking-tight text-gray-600">
                 Join the community-driven emergency reporting platform that connects citizens with emergency services instantly.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="#"
-                className="inline-flex items-center px-6 py-3 border border-transparent text-[18px] font-medium rounded-lg text-white bg-[#03BDE9] hover:bg-[#03BDE9]/90"
-              >
-                Download on App Store
-              </a>
-              <a
-                href="#"
-                className="inline-flex items-center px-6 py-3 border border-[#03BDE9] text-[18px] font-medium rounded-lg text-[#03BDE9] hover:bg-[#03BDE9]/10"
-              >
-                Get it on Google Play
-              </a>
+                <a
+                  href="#"
+                  className="inline-flex items-center text-center px-6 py-3 border border-transparent text-[16px] lg:text-[18px] font-medium rounded-lg text-white bg-[#03BDE9] hover:bg-[#03BDE9]/90"
+                >
+                  Download on App Store
+                </a>
+                <a
+                  href="#"
+                  className="inline-flex items-center px-6 py-3 border border-[#03BDE9] text-[16px] lg:text-[18px] font-medium rounded-lg text-[#03BDE9] hover:bg-[#03BDE9]/10"
+                >
+                  Get it on Google Play
+                </a>
               </div>
             </div>
             <div className="md:w-1/2 mt-12 md:mt-0">
@@ -48,39 +48,39 @@ export default function Home() {
       <section className="py-12 lg:py-20 px-4 bg-gray-50">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-800">Core Features</h2>
-            <p className="text-gray-600 text-[2rem] tracking-tight max-w-xl mx-auto">
+            <h2 className="text-2xl lg:text-4xl font-bold mb-4 text-gray-800">Core Features</h2>
+            <p className="text-gray-600 text-[1.2rem] lg:text-[2rem] tracking-tight max-w-xl mx-auto">
               Discover how Yawa App helps you stay connected and safe in emergencies
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <FeatureCard
-              icon={<AlertTriangle className="h-10 w-10 text-[#03BDE9]" />}
+              icon={<AlertTriangle className="h-6 lg:h-10 w-6 lg:w-10  text-[#03BDE9]" />}
               title="Incident Reporting"
               description="Report emergencies with precise location tagging and media support"
             />
             <FeatureCard
-              icon={<Bell className="h-10 w-10 text-[#03BDE9]" />}
+              icon={<Bell className="h-6 lg:h-10 w-6 lg:w-10 text-[#03BDE9]" />}
               title="Real-Time Notifications"
               description="Stay informed about ongoing emergencies in your area"
             />
             <FeatureCard
-              icon={<Phone className="h-10 w-10 text-[#03BDE9]" />}
+              icon={<Phone className="h-6 lg:h-10 w-6 lg:w-10 text-[#03BDE9]" />}
               title="Emergency Call Integration"
               description="One-tap access to emergency services with location sharing"
             />
             <FeatureCard
-              icon={<Share2 className="h-10 w-10 text-[#03BDE9]" />}
+              icon={<Share2 className="h-6 lg:h-10 w-6 lg:w-10 text-[#03BDE9]" />}
               title="Community Alerts"
               description="Share and receive local alerts from your community"
             />
             <FeatureCard
-              icon={<MessageSquare className="h-10 w-10 text-[#03BDE9]" />}
+              icon={<MessageSquare className="h-6 lg:h-10 w-6 lg:w-10 text-[#03BDE9]" />}
               title="Two-Way Communication"
               description="Seamless chat or calls with emergency responders"
             />
             <FeatureCard
-              icon={<MapPin className="h-10 w-10 text-[#03BDE9]" />}
+              icon={<MapPin className="h-6 lg:h-10 w-6 lg:w-10 text-[#03BDE9]" />}
               title="Live Incident Map"
               description="Real-time interactive map of reported incidents"
             />
@@ -186,8 +186,8 @@ function FeatureCard({ icon, title, description }: { icon: React.ReactNode; titl
     <Card>
       <CardContent className="p-6">
         <div className="my-4">{icon}</div>
-        <h3 className="text-3xl font-bold mb-2 text-gray-800 tracking-tight">{title}</h3>
-        <p className="text-gray-600 text-[1.8rem] tracking-tight">{description}</p>
+        <h3 className="text-xl lg:text-3xl font-bold mb-2 text-gray-800 tracking-tight">{title}</h3>
+        <p className="text-gray-600 text-[1.2rem] lg:text-[1.8rem] tracking-tight">{description}</p>
       </CardContent>
     </Card>
   )
@@ -197,7 +197,7 @@ function TestimonialCard({ quote, author, role }: { quote: string; author: strin
   return (
     <Card>
       <CardContent className="p-6">
-        <p className="text-gray-600 my-4 text-[1.6rem] tracking-tight">&ldquo;{quote}&rdquo;</p>
+        <p className="text-gray-600 my-4 text-[1rem] lg:text-[1.6rem] tracking-tight">&ldquo;{quote}&rdquo;</p>
         <div>
           <p className="font-bold text-gray-600 text-[1rem] tracking-tight">{author}</p>
           <p className="text-base text-gray-500">{role}</p>

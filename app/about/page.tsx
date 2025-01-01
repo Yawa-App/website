@@ -9,7 +9,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-gray-600 mb-4">About Yawa App</h1>
-            <p className="text-lg text-gray-600">
+            <p className="text-gray-600 text-[1.6rem] tracking-tight">
               Bridging the gap between citizens and emergency services
             </p>
           </div>
