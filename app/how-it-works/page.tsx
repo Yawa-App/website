@@ -14,8 +14,8 @@ export default function HowItWorks() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl font-bold text-gray-600 mb-6">How Yawa App Works</h1>
-          <p className="text-lg text-gray-600 mb-8">
+          <h1 className="text-2xl lg:text-4xl font-bold text-gray-600 mb-6">How Yawa App Works</h1>
+          <p className="text-[1.2rem] lg:text-[2rem] text-gray-600 mb-8">
             Learn how Yawa App helps you stay connected and safe during emergencies with our simple, intuitive process.
           </p>
         </div>
@@ -167,8 +167,8 @@ function Step({
         <div className="w-14 h-14 bg-[#03BDE9] text-[24px] rounded-full flex items-center justify-center text-white font-bold">
           {number}
         </div>
-        <h3 className="text-4xl font-bold text-gray-600">{title}</h3>
-        <p className="text-gray-500 text-[18px]">{description}</p>
+        <h3 className="text-2xl lg:text-4xl font-bold text-gray-600">{title}</h3>
+        <p className="text-gray-500 text-[1.2rem] lg:text-[2rem]">{description}</p>
       </div>
       <div className="relative h-[800px]">
         <Image
@@ -197,8 +197,8 @@ function FeatureCard({ icon, title, description }: { icon: React.ReactNode; titl
 function FaqItem({ question, answer }: { question: string; answer: string }) {
   return (
     <div className="border-b border-gray-200 pb-6">
-      <h3 className="text-lg font-bold text-gray-600 mb-2">{question}</h3>
-      <p className="text-gray-600">{answer}</p>
+      <h3 className="text-xl lg:text-3xl font-bold text-gray-600 mb-2">{question}</h3>
+      <p className="text-gray-600 text-[1.2rem] lg:text-[2rem]">{answer}</p>
     </div>
   )
 }

@@ -9,7 +9,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-gray-600 mb-4">About Yawa App</h1>
-            <p className="text-gray-600 text-[1.6rem] tracking-tight">
+            <p className="text-gray-500 text-[1.2rem] lg:text-[2rem] tracking-tight">
               Bridging the gap between citizens and emergency services
             </p>
           </div>
@@ -17,7 +17,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <h2 className="text-2xl font-bold text-gray-600 mb-4">Our Mission</h2>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-500 mb-6 text-[1.2rem] lg:text-[2rem]">
                 Yawa App aims to bridge the gap between citizens and emergency services, fostering safer, more aware communities. We believe in the power of technology to transform emergency response and community safety.
               </p>
               <Link href="/contact">

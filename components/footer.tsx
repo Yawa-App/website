@@ -6,14 +6,14 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4">Yawa App</h3>
+            <h3 className="text-2xl lg:text-4xl font-bold mb-4">Yawa App</h3>
             <p className="text-gray-400">
               Empowering communities with real-time emergency reporting and response.
             </p>
           </div>
           <div>
-            <h3 className="text-2xl font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-xl">
+            <h3 className="text-xl lg:text-2xl font-bold mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-base lg:text-xl">
               <li>
                 <Link href="/how-it-works" className="text-gray-400 hover:text-white">
                   How It Works
@@ -32,8 +32,8 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="text-2xl font-bold mb-4">Legal</h3>
-            <ul className="space-y-2 text-xl">
+            <h3 className="text-xl lg:text-2xl font-bold mb-4">Legal</h3>
+            <ul className="space-y-2 text-base lg:text-xl">
               <li>
                 <Link href="/privacy" className="text-gray-400 hover:text-white">
                   Privacy Policy
@@ -47,8 +47,8 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="text-2xl font-bold mb-4">Download</h3>
-            <ul className="text-xl space-y-2">
+            <h3 className="text-xl lg:text-2xl font-bold mb-4">Download</h3>
+            <ul className="text-base lg:text-xl space-y-2">
               <li>
                 <Link href="#" className="text-gray-400 hover:text-white">
                   App Store

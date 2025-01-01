@@ -92,8 +92,8 @@ export default function Home() {
       <section className="py-12 lg:py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-800">How It Works</h2>
-            <p className="text-gray-600 text-[2rem] tracking-tight max-w-2xl mx-auto">
+            <h2 className="text-2xl lg:text-4xl font-bold mb-4 text-gray-800">How It Works</h2>
+            <p className="text-gray-600 text-[1.2rem] lg:text-[2rem] tracking-tight max-w-2xl mx-auto">
               Simple steps to report incidents and stay informed
             </p>
           </div>
@@ -102,29 +102,29 @@ export default function Home() {
               <div className="w-16 h-16 mx-auto bg-[#03BDE9]/10 rounded-full flex items-center justify-center mb-4">
                 <Smartphone className="w-10 h-10 text-[#03BDE9]" />
               </div>
-              <h3 className="text-3xl font-bold text-gray-800 tracking-tight mb-2">Download & Sign Up</h3>
-              <p className="text-gray-600 text-[1.6rem] tracking-tight">Get started with Yawa App in minutes</p>
+              <h3 className="text-xl lg:text-3xl font-bold text-gray-800 tracking-tight mb-2">Download & Sign Up</h3>
+              <p className="text-gray-600 text-[1rem] lg:text-[1.6rem] tracking-tight">Get started with Yawa App in minutes</p>
             </div>
 
             <div className="text-center">
             <div className="w-16 h-16 mx-auto bg-[#03BDE9]/10 rounded-full flex items-center justify-center mb-4">
                     <AlertTriangle className="w-10 h-10 text-[#03BDE9]" />
                   </div>
-              <h3 className="text-3xl font-bold tracking-tight text-gray-800 mb-2">Report Incidents</h3>
-              <p className="text-gray-600 text-[1.6rem] tracking-tight">Quick and easy emergency reporting</p>
+              <h3 className="text-xl lg:text-3xl font-bold tracking-tight text-gray-800 mb-2">Report Incidents</h3>
+              <p className="text-gray-600 text-[1rem] lg:text-[1.6rem] tracking-tight">Quick and easy emergency reporting</p>
             </div>
 
             <div className="text-center">
             <div className="w-16 h-16 mx-auto bg-[#03BDE9]/10 rounded-full flex items-center justify-center mb-4">
                     <Radio className="w-10 h-10 text-[#03BDE9]" />
                   </div>
-              <h3 className="text-3xl font-bold tracking-tight text-gray-800 mb-2">Stay Connected</h3>
-              <p className="text-gray-600 text-[1.6rem] tracking-tight">Receive updates and communicate with responders</p>
+              <h3 className="text-xl lg:text-3xl font-bold tracking-tight text-gray-800 mb-2">Stay Connected</h3>
+              <p className="text-gray-600 text-[1rem] lg:text-[1.6rem] tracking-tight">Receive updates and communicate with responders</p>
             </div>
           </div>
           <div className="text-center mt-12">
             <Link href="/how-it-works">
-              <Button variant="outline" size="lg" className='text-xl border-gray-600 text-gray-500'>
+              <Button variant="outline" size="lg" className='text-base lg:text-xl border-gray-600 text-gray-500'>
                 Learn More
               </Button>
             </Link>
@@ -136,12 +136,12 @@ export default function Home() {
       <section className="py-12 lg:py-20 px-4 bg-gray-50">
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-gray-800">About Yawa App</h2>
-            <p className=" text-gray-600 text-[2rem] tracking-tight mb-8">
+            <h2 className="text-2xl lg:text-4xl font-bold mb-6 text-gray-800">About Yawa App</h2>
+            <p className=" text-gray-600 text-[1.2rem] lg:text-[2rem] tracking-tight mb-8">
               Yawa App aims to bridge the gap between citizens and emergency services, fostering safer, more aware communities.
             </p>
             <Link href="/about">
-              <Button variant="outline" size="lg" className='text-xl border-gray-600 text-gray-500 text-[18px]'>
+              <Button variant="outline" size="lg" className='text-base lg:text-xl border-gray-600 text-gray-500 text-[18px]'>
                 Learn More About Us
               </Button>
             </Link>
@@ -153,8 +153,8 @@ export default function Home() {
       <section className="py-12 lg:py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-800">What Users Say</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-[1.8rem] tracking-tight">
+            <h2 className="text-2xl lg:text-4xl font-bold mb-4 text-gray-800">What Users Say</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto text-[1.2rem] lg:text-[2rem] tracking-tight">
               Read about how Yawa App is making a difference in communities
             </p>
           </div>
