@@ -113,7 +113,7 @@ export default function Contact() {
             <p className="text-[1rem] lg:text-[1.8rem] text-gray-500 mb-6">
               Follow us on social media for the latest updates and community stories.
             </p>
-            <div className="flex justify-center space-x-4 text-gray-600">
+            <div className="flex justify-center flex-wrap space-x-4 text-gray-600">
               <Button variant="outline">Facebook</Button>
               <Button variant="outline">Twitter</Button>
               <Button variant="outline">Instagram</Button>
