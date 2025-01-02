@@ -114,10 +114,10 @@ export default function Contact() {
               Follow us on social media for the latest updates and community stories.
             </p>
             <div className="flex justify-center flex-wrap space-x-4 text-gray-600">
-              <Button variant="outline">Facebook</Button>
-              <Button variant="outline">Twitter</Button>
-              <Button variant="outline">Instagram</Button>
-              <Button variant="outline">LinkedIn</Button>
+              <Button variant="outline" className='mt-2'>Facebook</Button>
+              <Button variant="outline" className='mt-2'>Twitter</Button>
+              <Button variant="outline" className='mt-2'>Instagram</Button>
+              <Button variant="outline" className='mt-2'>LinkedIn</Button>
             </div>
           </section>
         </div>
