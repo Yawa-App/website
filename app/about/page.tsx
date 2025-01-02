@@ -46,7 +46,7 @@ export default function About() {
                   src="https://images.pexels.com/photos/8553867/pexels-photo-8553867.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="Yawa App Team"
                   fill
-                  className="object-cover rounded-lg"
+                  className="object-contain rounded-lg"
                 />
               </div>
               <div>
