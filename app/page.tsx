@@ -33,11 +33,11 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="md:w-1/2 mt-12 md:mt-0">
+            <div className="lg:w-1/2 mt-12 md:mt-0">
               <img
-                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800&q=80"
+                src="https://images.pexels.com/photos/3280130/pexels-photo-3280130.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Emergency Response Team"
-                className="rounded-lg shadow-xl"
+                className="rounded-lg shadow-xl w-[100%] h-[100%]"
               />
             </div>
           </div>
