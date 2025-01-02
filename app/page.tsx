@@ -161,17 +161,17 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <TestimonialCard
               quote="Yawa App has transformed how our community responds to emergencies. It's incredibly easy to use!"
-              author="Sarah Johnson"
+              author="Bolaji Adeola"
               role="Community Leader"
             />
             <TestimonialCard
               quote="The real-time notifications have helped us stay informed and safe during critical situations."
-              author="Michael Chen"
+              author="Ngozi Okoli"
               role="Resident"
             />
             <TestimonialCard
               quote="As a first responder, this app has improved our response time and coordination significantly."
-              author="David Thompson"
+              author="Abubakr Yusuf"
               role="Emergency Responder"
             />
           </div>

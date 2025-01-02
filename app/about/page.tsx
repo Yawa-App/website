@@ -124,17 +124,17 @@ export default function About() {
             <h2 className="text-2xl font-bold text-gray-600 mb-8 text-center">Our Team</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <TeamMember
-                name="John Doe"
+                name="Edward T. Ikpaahindi"
                 role="Founder & CEO"
                 image="/placeholder.svg"
               />
               <TeamMember
-                name="Jane Smith"
+                name="Iysah A. Yusuf"
                 role="Head of Technology"
                 image="/placeholder.svg"
               />
               <TeamMember
-                name="Mike Johnson"
+                name="Shola O. Odunlami"
                 role="Community Manager"
                 image="/placeholder.svg"
               />
