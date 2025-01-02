@@ -75,7 +75,7 @@ export default function Contact() {
                     <MapPin className="h-6 w-6 text-[#03BDE9]" />
                     <div>
                       <h3 className="font-bold text-xl text-gray-600 mt-4">Address</h3>
-                      <p className="text-gray-500">123 Yawa Street, Tech City, FCT, Abuja</p>
+                      <p className="text-gray-500">Mamman Shata Street, Gwarimpa, Abuja</p>
                     </div>
                   </CardContent>
                 </Card>
