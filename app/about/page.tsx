@@ -33,7 +33,7 @@ export default function About() {
                 src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?auto=format&fit=crop&w=800&q=80"
                 alt="Yawa App Mission"
                 fill
-                className="object-cover rounded-lg"
+                className="object-contain rounded-lg"
               />
             </div>
           </div>
