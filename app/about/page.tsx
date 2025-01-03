@@ -134,7 +134,7 @@ export default function About() {
                 image="/placeholder.svg"
               />
               <TeamMember
-                name="Shola O. Odunlami"
+                name="Olusola O. Odunlami"
                 role="Community Manager"
                 image="/placeholder.svg"
               />
