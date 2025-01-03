@@ -44,6 +44,11 @@ export function Footer() {
                   Terms of Service
                 </Link>
               </li>
+              <li>
+                <Link href="/request-delete" className="text-gray-400 hover:text-white">
+                  Delete Account
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
