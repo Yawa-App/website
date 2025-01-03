@@ -7,6 +7,7 @@ import Downloadimage from '@/public/yawa-preview-01.svg'
 import LocationImage from '@/public/yawa-preview-02.svg'
 import ReportImage from '@/public/yawa-preview-03.svg'
 import UpdateImage from '@/public/yawa-preview-04.svg'
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 
 export default function HowItWorks() {
   return (
@@ -103,7 +104,7 @@ export default function HowItWorks() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-600 text-center mb-12">Frequently Asked Questions</h2>
-            <div className="space-y-6">
+            <Accordion type="single" collapsible className="w-full">
               <FaqItem
                 question="How quickly will emergency services respond?"
                 answer="Response times vary based on the incident type and location. However, our direct integration with emergency services helps minimize delays in response time."
@@ -120,7 +121,7 @@ export default function HowItWorks() {
                 question="What happens if I lose internet connection?"
                 answer="Yawa App includes offline functionality for basic emergency reporting. Once connection is restored, all information will be synchronized automatically."
               />
-            </div>
+            </Accordion>
           </div>
         </div>
       </section>
@@ -219,10 +220,12 @@ function FeatureCard({ icon, title, description }: { icon: React.ReactNode; titl
 
 function FaqItem({ question, answer }: { question: string; answer: string }) {
   return (
-    <div className="border-b border-gray-200 pb-6">
-      <h3 className="text-xl lg:text-3xl font-bold text-gray-600 mb-2.5">{question}</h3>
-      <p className="text-gray-500 text-[1rem] lg:text-[1.6rem]">{answer}</p>
-    </div>
+    <AccordionItem value="item-1">zz
+      <AccordionTrigger className='text-gray-800 text-xl'>{question}</AccordionTrigger>
+      <AccordionContent className='text-gray-500 text-[.7rem] lg:text-[1.4rem]'>
+        {answer}
+      </AccordionContent>
+    </AccordionItem>
   )
 }
 

@@ -3,6 +3,12 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Card, CardContent } from '@/components/ui/card'
 import { Mail, Phone, MapPin } from 'lucide-react'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
 export default function Contact() {
   return (
@@ -86,26 +92,28 @@ export default function Contact() {
           {/* ==========FAQs ============== */}
           <section className="mb-16">
             <h2 className="text-3xl text-gray-600 font-bold mb-6">Frequently Asked Questions</h2>
-            <div className="space-y-6">
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-gray-600 text-2xl font-bold mb-2 mt-4">How quickly can I expect a response?</h3>
-                  <p className="text-[1rem] lg:text-[1.8rem] text-gray-500">We aim to respond to all inquiries within 24-48 hours during business days.</p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-gray-600 text-2xl font-bold mb-2 mt-4">Do you offer technical support?</h3>
-                  <p className="text-[1rem] lg:text-[1.8rem] text-gray-500">Yes, our technical support team is available to assist you with any app-related issues.</p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-gray-600 text-2xl font-bold mb-2 mt-4">Can I request a feature for the app?</h3>
-                  <p className="text-[1rem] lg:text-[1.8rem] text-gray-500">We welcome user feedback and feature requests. Please use the contact form to submit your ideas.</p>
-                </CardContent>
-              </Card>
-            </div>
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger className='text-gray-800 text-xl'>How quickly can I expect a response?</AccordionTrigger>
+                <AccordionContent className='text-gray-500 text-[.7rem] lg:text-[1.4rem]'>
+                  We aim to respond to all inquiries within 24-48 hours during business days.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-2">
+                <AccordionTrigger className='text-gray-800 text-xl'>Do you offer technical support?</AccordionTrigger>
+                <AccordionContent className='text-gray-500 text-[.7rem] lg:text-[1.4rem]'>
+                  Yes, our technical support team is available to assist you with any app-related issues.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3">
+                <AccordionTrigger className='text-gray-800 text-xl'>Can I request a feature for the app?</AccordionTrigger>
+                <AccordionContent className='text-gray-500 text-[.7rem] lg:text-[1.4rem]'>
+                  We welcome user feedback and feature requests. Please use the contact form to submit your ideas.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </section>
 
           <section className="text-center">
