@@ -56,26 +56,26 @@ export default function AccountDeletion() {
     <div className="min-h-screen pt-24">
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-md mx-auto">
-          <h1 className="text-3xl text-gray-800 font-bold mb-6">Request Account Deletion</h1>
+          <h1 className="text-3xl text-gray-800 font-bold mb-6">Account Delete Request </h1>
           <p className="text-gray-600 mb-6">
             We're sorry to see you go. Please provide your email or phone number associated with your account to initiate the deletion process.
           </p>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-4">
-              <Label>Contact Method</Label>
+              <Label className='text-gray-600'>Contact Method</Label>
               <RadioGroup value={contactMethod} onValueChange={setContactMethod}>
                 <div className="flex items-center space-x-2">
                   <RadioGroupItem value="email" id="email" />
-                  <Label htmlFor="email">Email</Label>
+                  <Label htmlFor="email" className='text-gray-600' >Email</Label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <RadioGroupItem value="phone" id="phone" />
-                  <Label htmlFor="phone">Phone Number</Label>
+                  <Label htmlFor="phone" className='text-gray-600'>Phone Number</Label>
                 </div>
               </RadioGroup>
             </div>
             <div className="space-y-2">
-              <Label htmlFor="contactValue">
+              <Label htmlFor="contactValue" className='text-gray-600'>
                 {contactMethod === 'email' ? 'Email Address' : 'Phone Number'}
               </Label>
               <Input
