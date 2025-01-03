@@ -84,6 +84,7 @@ export default function AccountDeletion() {
                 placeholder={contactMethod === 'email' ? 'your@email.com' : '+1234567890'}
                 value={contactValue}
                 onChange={(e) => setContactValue(e.target.value)}
+                className='text-gray-600'
                 required
               />
             </div>
