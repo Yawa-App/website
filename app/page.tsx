@@ -3,6 +3,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AlertTriangle, Bell, MapPin, MessageSquare, Phone, Share2, Smartphone, Radio, CheckCircle } from 'lucide-react';
+import { BlogSection } from '@/components/blog-section';
 
 export default function Home() {
   return (
@@ -177,6 +178,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      {/* ====== Blog section ============ */}
+      <BlogSection />
+
     </div>
   )
 }

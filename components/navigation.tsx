@@ -34,6 +34,7 @@ export function Navigation() {
           <div className="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-8 p-4 lg:p-0">
             <Link href="/how-it-works" className="hover:text-[#03BDE9] text-gray-600">How It Works</Link>
             <Link href="/about" className="hover:text-[#03BDE9] text-gray-600">About</Link>
+            <Link href="/blog" className="hover:text-[#03BDE9] text-gray-600">Blog</Link>
             <Link href="/contact" className="hover:text-[#03BDE9] text-gray-600">Contact</Link>
             <Button className="w-full lg:w-auto bg-[#03BDE9] hover:bg-[#03BDE9]/90">
               Download Now
