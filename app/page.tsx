@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { AlertTriangle, Bell, MapPin, MessageSquare, Phone, Share2, Smartphone, Radio, CheckCircle } from 'lucide-react';
 import { BlogSection } from '@/components/blog-section';
+import HeroImage from '@/public/yawa-hero.jpg'
 
 export default function Home() {
   return (
@@ -35,8 +36,8 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:w-1/2 mt-12 md:mt-0">
-              <img
-                src="https://images.pexels.com/photos/3280130/pexels-photo-3280130.jpeg?auto=compress&cs=tinysrgb&w=800"
+              <Image
+                src={HeroImage}
                 alt="Emergency Response Team"
                 className="rounded-lg shadow-xl w-[100%] h-[100%]"
               />
