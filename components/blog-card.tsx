@@ -32,7 +32,7 @@ export function BlogCard({
 }: BlogCardProps) {
   return (
     <Card className="overflow-hidden group">
-      <Link href={`/blog/${slug}`}>
+      <Link href={slug} target='_blank'>
         <div className="relative h-48 overflow-hidden">
           <Image
             src={coverImage}
