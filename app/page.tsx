@@ -10,42 +10,38 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="pt-24 lg:pt-32 pb-12 lg:pb-20 px-4 bg-gradient-to-br from-[#03BDE9]/10 to-white">
+      <section 
+        className="pt-24 lg:pt-32 pb-12 lg:pb-20 px-4 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${HeroImage.src})` }}
+      >
         <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
-            <div className="space-y-6">
-              <h1 className="text-4xl lg:text-7xl font-bold leading-tight text-gray-800">
+          <div className="min-h-[60vh] flex items-center justify-center">
+            <div className="text-center space-y-6 text-white/80 p-6">
+              <h1 className="text-4xl lg:text-7xl font-bold leading-tight text-white">
                 Empowering Communities, Saving Lives
               </h1>
-              <p className="text-[1.2rem] lg:text-[2rem] tracking-tight text-gray-600">
+              <p className="text-[1.2rem] lg:text-[2rem] tracking-tight text-white">
                 Join the community-driven emergency reporting platform that connects citizens with emergency services instantly.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="#"
                   className="inline-flex items-center text-center px-6 py-3 border border-transparent text-[16px] lg:text-[18px] font-medium rounded-lg text-white bg-[#03BDE9] hover:bg-[#03BDE9]/90"
                 >
-                  Download on App Store
+                  Download on Apple Store
                 </a>
                 <a
-                  href="#"
-                  className="inline-flex items-center px-6 py-3 border border-[#03BDE9] text-[16px] lg:text-[18px] font-medium rounded-lg text-[#03BDE9] hover:bg-[#03BDE9]/10"
+                  href="https://play.google.com/store/apps/details?id=com.yawaapp.Yawa"
+                  target='_blank'
+                  className="inline-flex items-center px-6 py-3 border border-[#fff] text-[16px] lg:text-[18px] font-medium rounded-lg text-[#fff] hover:bg-[#03BDE9]/10"
                 >
                   Get it on Google Play
                 </a>
               </div>
             </div>
-            <div className="lg:w-1/2 mt-12 md:mt-0">
-              <Image
-                src={HeroImage}
-                alt="Emergency Response Team"
-                className="rounded-lg shadow-xl w-[100%] h-[100%]"
-              />
-            </div>
           </div>
         </div>
       </section>
-
       {/* Features Section */}
       <section className="py-12 lg:py-20 px-4 bg-gray-50">
         <div className="container mx-auto">
