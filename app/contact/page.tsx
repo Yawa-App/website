@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Card, CardContent } from '@/components/ui/card'
-import { Mail, Phone, MapPin } from 'lucide-react'
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
 import {
   Accordion,
   AccordionContent,
@@ -122,10 +122,20 @@ export default function Contact() {
               Follow us on social media for the latest updates and community stories.
             </p>
             <div className="flex justify-center flex-wrap space-x-4 text-gray-600">
-              <Button variant="outline" className='mt-2'>Facebook</Button>
-              <Button variant="outline" className='mt-2'>Twitter</Button>
-              <Button variant="outline" className='mt-2'>Instagram</Button>
-              <Button variant="outline" className='mt-2'>LinkedIn</Button>
+              <a href="https://www.facebook.com/share/1YhjGgozr4/" target='_blank' className="w-10 h-10 bg-[#3B5998] flex items-center justify-center rounded-full">
+                <Facebook className="w-6 h-6 text-white" />
+              </a>
+              <a href="https://x.com/Yawa_app_soln" target='blank' className="w-10 h-10 bg-[#1DA1F2] flex items-center justify-center rounded-full">
+                <Twitter className="w-6 h-6 text-white" />
+              </a>
+
+              <a href="https://x.com/Yawa_app_soln" target='blank' className="w-10 h-10 bg-[#E4405F] flex items-center justify-center rounded-full">
+                <Instagram className="w-6 h-6 text-white" />
+              </a>
+
+              <a href="https://www.linkedin.com/company/yawa-app/" target='blank' className="w-10 h-10 bg-[#0077B5] flex items-center justify-center rounded-full">
+                <Linkedin  className="w-6 h-6 text-white" />
+              </a>
             </div>
           </section>
         </div>
