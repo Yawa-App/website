@@ -129,7 +129,7 @@ export default function Contact() {
                 <Twitter className="w-6 h-6 text-white" />
               </a>
 
-              <a href="https://x.com/Yawa_app_soln" target='blank' className="w-10 h-10 bg-[#E4405F] flex items-center justify-center rounded-full">
+              <a href="https://www.instagram.com/yawaapptechnologies?utm_source=qr&igsh=MWR4amhlbzlpdGs4aw==" target='blank' className="w-10 h-10 bg-[#E4405F] flex items-center justify-center rounded-full">
                 <Instagram className="w-6 h-6 text-white" />
               </a>
 
