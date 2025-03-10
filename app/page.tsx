@@ -8,7 +8,7 @@ import HeroImage from '@/public/yawa-hero.jpg'
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen mt-10">
       {/* Hero Section */}
       <section 
         className="pt-24 lg:pt-32 pb-12 lg:pb-20 px-4 bg-cover bg-center bg-no-repeat"
