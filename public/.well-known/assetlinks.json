@@ -1,0 +1,12 @@
+[
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.yawaapp.Yawa",
+        "sha256_cert_fingerprints": [
+          "FA:D3:9D:F2:2C:AC:DA:01:66:8D:2F:D4:D8:34:58:C1:70:59:BE:91:5D:B4:67:4F:D3:49:47:23:0A:27:B4:5F"
+        ]
+      }
+    }
+  ]
