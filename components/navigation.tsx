@@ -1,25 +1,28 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import Link from 'next/link'
-import { Menu, X } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import { useState } from "react";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function Navigation() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b">
-      <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 lg:bg-transparent">
+      <nav className="container mx-auto px-4 lg:px-5 h-16 flex items-center justify-between mt-2.5">
         <Link href="/" className="flex items-center space-x-2">
           <svg
-            className="h-8 w-8"
-            viewBox="0 0 612 537.19"
-            fill="#03BDE9"
+            xmlns="http://www.w3.org/2000/svg"
+            width="107.000000pt"
+            height="22.000000pt"
+            viewBox="0 0 117.000000 32.000000"
           >
-            <path d="M440.59,102h-3c-11.07,0-22.14-.12-33.21-.11-10,0-20,.14-30,.19a26.31,26.31,0,0,0-7.84,1.22,23.83,23.83,0,0,0-9.45,5.75,36.87,36.87,0,0,0-5.92,7.48c-1.45,2.43-2.86,4.89-4.16,7.4q-17.19,33.12-34.33,66.26c-1,2-2,3.93-3.07,5.89-.28.54-.61,1.05-1,1.69a5.69,5.69,0,0,1-1.74-2.35q-12.4-20.74-24.77-41.51Q268,130.2,253.82,106.47c-.55-.91-1.11-1.8-1.62-2.64-2-.3-72.52-.5-77.41-.23a5.69,5.69,0,0,0-.87.19,2.23,2.23,0,0,0-.12.41.76.76,0,0,0,.06.25,2.5,2.5,0,0,0,.09.25l.37.71q45.7,83.37,91.43,166.73c0,.08.06.17.18.5-.28.62-.6,1.43-1,2.2q-12,24-24.12,47.92L221,362.14c-.43.85-.9,1.68-1.38,2.59-1-.36-1.19-1.19-1.55-1.84Q212,352,206,341.07L69.69,95.62Q54,67.41,38.38,39.19a9.2,9.2,0,0,1-1.19-2.45c.16-.24.19-.33.25-.37a.55.55,0,0,1,.26-.06l536.74-.05c.35,0,.7.07,1,.1.29,1.06-.43,1.73-.83,2.47q-7.9,14.76-15.85,29.48-95,176.15-192.17,351.08-26.72,48-53.59,96c-.47.84-1,1.67-1.46,2.53-1-.23-1.25-1.07-1.67-1.69q-7.74-11.61-15.44-23.23c-11.48-17.25-22.81-34.6-33.38-52.42-.9-1.52-1.78-3-2.74-4.69.45-.87.88-1.73,1.34-2.58q27-49.4,54-98.79L439.17,105.26A10,10,0,0,0,440.59,102Z" />
+            <path
+              d="M63 210c70-123 68-122 85-78 11 29 9 37-18 85-36 64-36 60-4 59 16-1 32-12 42-29 21-34 24-34 45 3 16 27 57 43 57 23 0-5-27-55-59-113-57-103-58-106-43-132 9-15 19-24 23-20 8 7 139 235 165 285l15 27H2l61-110zM533 252c-14-2-26-16-36-40l-15-37-15 38c-13 29-22 37-41 37h-25l29-62c17-35 30-78 30-95 0-26 4-33 20-33s20 7 20 36c0 21 13 60 31 95 35 64 35 67 2 61zM1071 251c-19-5-90-152-91-188 0-2 11-3 25-3 21 0 27 8 45 70 11 39 23 70 25 70s14-31 25-70c19-63 23-70 46-70 19 0 25 4 21 14-3 8-18 50-33 93-32 92-32 92-63 84zM603 233c-3-10-19-52-35-93-15-41-28-76-28-77 0-2 11-3 25-3 21 0 27 8 45 70 11 39 23 70 25 70s14-31 25-70c19-63 23-70 46-70 21 0 25 4 19 18-3 9-18 52-33 94-25 72-29 78-55 78-17 0-30-7-34-17zM746 163c13-48 24-92 24-96 0-5 12-7 27-5 24 3 29 10 43 68l16 65 19-67c23-86 57-97 75-25 6 23 18 64 26 91s14 51 14 53-11 3-24 3c-21 0-25-7-37-67l-13-68-14 68c-14 63-17 67-42 67s-28-4-40-60c-16-75-24-76-36-2-8 52-11 57-36 60l-26 3 24-88z"
+              transform="matrix(.1 0 0 -.1 0 32)"
+            />
           </svg>
-          <span className="text-2xl font-bold text-gray-800">Yawa</span>
         </Link>
 
         <button
@@ -27,22 +30,41 @@ export function Navigation() {
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
-          {isOpen ? <X className="h-6 w-6 text-gray-600" /> : <Menu className="h-6 w-6 text-gray-600" />}
+          {isOpen ? (
+            <X className="h-6 w-6 text-gray-600" />
+          ) : (
+            <Menu className="h-6 w-6 text-gray-600" />
+          )}
         </button>
 
-        <div className={`${isOpen ? 'block' : 'hidden'} lg:block absolute lg:relative top-16 lg:top-0 left-0 right-0 bg-white lg:bg-transparent`}>
-          <div className="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-8 p-4 lg:p-0">
-            <Link href="/how-it-works" className="hover:text-[#03BDE9] text-gray-600">How It Works</Link>
-            <Link href="/about" className="hover:text-[#03BDE9] text-gray-600">About</Link>
-            <Link href="/blog" className="hover:text-[#03BDE9] text-gray-600">Blog</Link>
-            <Link href="/contact" className="hover:text-[#03BDE9] text-gray-600">Contact</Link>
-            <Button className="w-full lg:w-auto bg-[#03BDE9] hover:bg-[#03BDE9]/90">
-              Download Now
-            </Button>
+        <div
+          className={`${isOpen ? "block" : "hidden"} lg:block absolute lg:relative top-16 lg:top-1 left-0 right-0 bg-white lg:bg-transparent`}
+        >
+          <div className="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-8 p-4 lg:py-3 lg:px-8 lg:rounded-full bg-white/80">
+            {/* <Link href="/about" className="hover:text-[#03BDE9] text-gray-600">
+              About
+            </Link> */}
+            <Link href="/blog" className="hover:text-[#03BDE9] text-gray-600">
+              Blog
+            </Link>
+            <Link
+              href="/contact"
+              className="hover:text-[#03BDE9] text-gray-600"
+            >
+              Contact
+            </Link>
+            <Link
+              href="/how-it-works"
+              className="hover:text-[#03BDE9] text-gray-600"
+            >
+              How It Works
+            </Link>
           </div>
         </div>
+        <Button className="w-full hidden lg:block lg:w-auto bg-[#03BDE9] hover:bg-[#03BDE9]/90">
+          Download Now
+        </Button>
       </nav>
     </header>
-  )
+  );
 }
-
