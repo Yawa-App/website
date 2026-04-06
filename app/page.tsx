@@ -82,15 +82,17 @@ export default function Home() {
         </div>
       </section>
       {/* Features Section */}
-      <section className="py-12 lg:py-20 px-4 bg-gray-50">
+      <section className="py-12 lg:py-20 px-4 bg-gray-50 md:px-20">
         <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl lg:text-4xl font-bold mb-4 text-gray-800">
-              Core Features
+          <div className="mb-12">
+            <h2 className="text-2xl lg:text-5xl font-bold mb-4 text-[#0F0F0F]">
+              Why YAWA Exists
             </h2>
-            <p className="text-gray-600 text-[1.2rem] lg:text-[2rem] tracking-tight max-w-xl mx-auto">
-              Discover how Yawa App helps you stay connected and safe in
-              emergencies
+            <p className="text-[#0F0F0F] tracking-tight">
+              Emergencies don’t wait — and neither should you. <br /> YAWA
+              empowers individuals, families, and entire communities with the
+              tools they <br /> need to stay informed, respond quickly, and
+              support one another.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
