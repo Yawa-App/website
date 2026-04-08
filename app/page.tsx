@@ -82,7 +82,7 @@ export default function Home() {
         </div>
       </section>
       {/* Features Section */}
-      <section className="py-12 lg:py-20 px-4 bg-gray-50 md:px-20">
+      <section className="py-12 lg:py-20 px-4 md:px-20">
         <div className="container mx-auto">
           <div className="mb-12">
             <h2 className="text-2xl lg:text-5xl font-bold mb-4 text-[#0F0F0F]">
@@ -95,47 +95,128 @@ export default function Home() {
               support one another.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <FeatureCard
-              icon={
-                <AlertTriangle className="h-6 lg:h-10 w-6 lg:w-10  text-[#03BDE9]" />
-              }
-              title="Incident Reporting"
-              description="Report emergencies with precise location tagging and media support"
-            />
-            <FeatureCard
-              icon={<Bell className="h-6 lg:h-10 w-6 lg:w-10 text-[#03BDE9]" />}
-              title="Real-Time Notifications"
-              description="Stay informed about ongoing emergencies in your area"
-            />
-            <FeatureCard
-              icon={
-                <Phone className="h-6 lg:h-10 w-6 lg:w-10 text-[#03BDE9]" />
-              }
-              title="Emergency Call Integration"
-              description="One-tap access to emergency services with location sharing"
-            />
-            <FeatureCard
-              icon={
-                <Share2 className="h-6 lg:h-10 w-6 lg:w-10 text-[#03BDE9]" />
-              }
-              title="Community Alerts"
-              description="Share and receive local alerts from your community"
-            />
-            <FeatureCard
-              icon={
-                <MessageSquare className="h-6 lg:h-10 w-6 lg:w-10 text-[#03BDE9]" />
-              }
-              title="Two-Way Communication"
-              description="Seamless chat or calls with emergency responders"
-            />
-            <FeatureCard
-              icon={
-                <MapPin className="h-6 lg:h-10 w-6 lg:w-10 text-[#03BDE9]" />
-              }
-              title="Live Incident Map"
-              description="Real-time interactive map of reported incidents"
-            />
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-[#F6F6F6] rounded-xl px-6 py-9 flex flex-col gap-12 border-2 border-[#E5E7EB]">
+              <div className="flex gap-5">
+                <div className="rounded-full bg-[#F9EDFA] w-[60px] h-[60px] flex items-center justify-center shrink-0">
+                  <Image
+                    src={"./note_stack.svg"}
+                    alt="icon"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+                <div>
+                  <h4 className="font-bold text-[#0F0F0F] text-3xl">
+                    Stay informed the moment something happens.
+                  </h4>
+                  <p className="text-[#5E5E5E] mt-4">
+                    Receive immediate notifications about emergencies,
+                    incidents, or suspicious activity in your area, so you can
+                    assess risks early and act confidently.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center">
+                <Image
+                  src={"./phone-1.svg"}
+                  alt="image"
+                  width={301}
+                  height={289}
+                />
+              </div>
+            </div>
+            <div className="bg-[#F6F6F6] rounded-xl p-8 flex flex-col px-6 py-9 gap-7 border-2 border-[#E5E7EB]">
+              <div className="flex gap-5">
+                <div className="rounded-full bg-[#E0E6F9] w-[60px] h-[60px] flex items-center justify-center shrink-0">
+                  <Image
+                    src={"./vector.svg"}
+                    alt="icon"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+                <div>
+                  <h4 className="font-bold text-[#0F0F0F] text-3xl">
+                    Personalized Safety Tools; Your safety, customized.
+                  </h4>
+                  <p className="text-[#5E5E5E] mt-4">
+                    YAWA gives you one-tap SOS, Safety Circles, and
+                    location-based alerts tailored to your preferences. Whether
+                    you're commuting, travelling, or heading home late, the app
+                    adapts to your needs.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center">
+                <Image
+                  src={"./phone-2.svg"}
+                  alt="image"
+                  width={301}
+                  height={289}
+                />
+              </div>
+            </div>
+            <div className="bg-[#F6F6F6] rounded-xl p-8 flex flex-col px-6 py-9 gap-12 border-2 border-[#E5E7EB]">
+              <div className="flex gap-5">
+                <div className="rounded-full bg-[#E8E0F9] w-[60px] h-[60px] flex items-center justify-center shrink-0">
+                  <Image
+                    src={"./vector-2.svg"}
+                    alt="icon"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+                <div>
+                  <h4 className="font-bold text-[#0F0F0F] text-3xl">
+                    Everyone has a role in safety.
+                  </h4>
+                  <p className="text-[#5E5E5E] mt-4">
+                    Use your phone to report incidents with photos, videos, or
+                    descriptions. Your reports keep others alert and strengthen
+                    community awareness.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center">
+                <Image
+                  src={"./phone-3.svg"}
+                  alt="image"
+                  width={301}
+                  height={289}
+                />
+              </div>
+            </div>
+            <div className="bg-[#F6F6F6] rounded-xl p-8 flex flex-col px-6 py-9 gap-14 border-2 border-[#E5E7EB]">
+              <div className="flex gap-5">
+                <div className="rounded-full bg-[#E0F4F9] w-[60px] h-[60px] flex items-center justify-center shrink-0">
+                  <Image
+                    src={"./vector-3.svg"}
+                    alt="icon"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+                <div>
+                  <h4 className="font-bold text-[#0F0F0F] text-3xl">
+                    Stay always one step ahead
+                  </h4>
+                  <p className="text-[#5E5E5E] mt-4">
+                    With intelligent alerts, simple reporting tools, and a
+                    community-first approach, YAWA helps you stay proactive, not
+                    reactive. You don’t just stay informed; you stay prepared.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center">
+                <Image
+                  src={"./phone-4.svg"}
+                  alt="image"
+                  width={301}
+                  height={289}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
