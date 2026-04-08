@@ -9,9 +9,11 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 lg:bg-transparent">
-      <nav className="container mx-auto px-4 lg:px-5 h-16 flex items-center justify-between mt-2.5">
-        <Link href="/" className="flex items-center space-x-2">
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 ${isOpen ? "bg-white" : "bg-white/80 lg:bg-[#E9F5F8]"}`}
+    >
+      <nav className="container mx-auto px-4 lg:px-5 py-5 md:py-3 flex items-center justify-between md:mt-0">
+        <Link href="/" className="">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="107.000000pt"
@@ -38,7 +40,7 @@ export function Navigation() {
         </button>
 
         <div
-          className={`${isOpen ? "block" : "hidden"} lg:block absolute lg:relative top-16 lg:top-1 left-0 right-0 bg-white lg:bg-transparent`}
+          className={`${isOpen ? "block" : "hidden"} lg:block absolute lg:relative top-16 lg:top-0 left-0 right-0 bg-white lg:bg-transparent`}
         >
           <div className="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-8 p-4 lg:py-3 lg:px-8 lg:rounded-full bg-white/80">
             {/* <Link href="/about" className="hover:text-[#03BDE9] text-gray-600">
