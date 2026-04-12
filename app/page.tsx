@@ -28,15 +28,19 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="min-h-[60vh] flex flex-col gap-4 lg:flex-row lg:gap-0 items-center justify-center">
             <div className=" space-y-6 text-white/80">
+              <span className="text-[#0B94B4] text-sm rounded-2xl bg-[#BDD6DC] py-[6px] px-[10px]">
+                YAWA - Your companion to safety
+              </span>
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-[#0F0F0F] text-nowrap">
-                Stay Aware. <br /> Stay Connected. <br /> Stay Safe.
+                Stay Aware. <br /> Stay Connected. <br />{" "}
+                <span className="text-[#03BDE9]">Stay Safe.</span>
               </h1>
               <p className="text-[1.2rem] lg:text-lg tracking-tight text-[#5E5E5E]">
                 Your real-time companion for personal and community safety. Get
                 instant alerts, report incidents effortlessly, and protect the
                 people who matter to you.
               </p>
-              <div className="lg:flex gap-5 items-center hidden">
+              {/* <div className="lg:flex gap-5 items-center hidden">
                 <a
                   href="#"
                   className="flex gap-2 items-center text-center px-8 py-3 border border-transparent text-[16px] font-medium rounded-xl text-white bg-[#0F0F0F] hover:bg-[#0F0F0F]/90"
@@ -68,7 +72,7 @@ export default function Home() {
                     <p className="text-xl">Google Play</p>
                   </div>
                 </a>
-              </div>
+              </div> */}
             </div>
 
             <Image
@@ -222,87 +226,94 @@ export default function Home() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-12 lg:py-20 px-4">
+      <section className="py-12 lg:py-20 px-4 lg:px-20 bg-[#E8F5F8]">
         <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl lg:text-4xl font-bold mb-4 text-gray-800">
-              How It Works
-            </h2>
-            <p className="text-gray-600 text-[1.2rem] lg:text-[2rem] tracking-tight max-w-2xl mx-auto">
-              Simple steps to report incidents and stay informed
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto bg-[#03BDE9]/10 rounded-full flex items-center justify-center mb-4">
-                <Smartphone className="w-10 h-10 text-[#03BDE9]" />
-              </div>
-              <h3 className="text-xl lg:text-3xl font-bold text-gray-800 tracking-tight mb-2">
-                Download & Sign Up
-              </h3>
-              <p className="text-gray-600 text-[1rem] lg:text-[1.6rem] tracking-tight">
-                Get started with Yawa App in minutes
+          <div className="min-h-[60vh] flex flex-col gap-8 lg:flex-row lg:gap-0 items-center justify-center">
+            <div className=" space-y-6 text-white/80 md:mr-16">
+              <span className="text-[#0B94B4] text-sm rounded-2xl bg-[#BDD6DC] py-[6px] px-[10px]">
+                YAWA for Organisations(YES!)
+              </span>
+              <h1 className="text-3xl font-bold leading-tight text-[#0F0F0F] text-nowrap">
+                Stay Connected To Your <br /> Workforce
+              </h1>
+              <p className="text-[1.2rem] lg:text-lg tracking-tight text-[#5E5E5E]">
+                With Yawa Enterprise system (YES), you can get real time
+                visibility into workforce’s security, hindrances to work and
+                overall send verified information to them by just a click
               </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto bg-[#03BDE9]/10 rounded-full flex items-center justify-center mb-4">
-                <AlertTriangle className="w-10 h-10 text-[#03BDE9]" />
-              </div>
-              <h3 className="text-xl lg:text-3xl font-bold tracking-tight text-gray-800 mb-2">
-                Report Incidents
-              </h3>
-              <p className="text-gray-600 text-[1rem] lg:text-[1.6rem] tracking-tight">
-                Quick and easy emergency reporting
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto bg-[#03BDE9]/10 rounded-full flex items-center justify-center mb-4">
-                <Radio className="w-10 h-10 text-[#03BDE9]" />
-              </div>
-              <h3 className="text-xl lg:text-3xl font-bold tracking-tight text-gray-800 mb-2">
-                Stay Connected
-              </h3>
-              <p className="text-gray-600 text-[1rem] lg:text-[1.6rem] tracking-tight">
-                Receive updates and communicate with responders
-              </p>
-            </div>
-          </div>
-          <div className="text-center mt-12">
-            <Link href="/how-it-works">
-              <Button
-                variant="outline"
-                size="lg"
-                className="text-base lg:text-xl border-gray-600 text-gray-500"
-              >
+              <Button className=" lg:w-auto bg-[#FFFFFF] rounded-xl text-[#5E5E5E]">
                 Learn More
               </Button>
-            </Link>
+            </div>
+
+            <Image
+              src={"./ipad-landscape.svg"}
+              alt="hero iamge"
+              width={559}
+              height={466}
+              className="w-full max-w-[400px] lg:max-w-[559px] h-auto"
+            />
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section className="py-12 lg:py-20 px-4 bg-gray-50">
+      <section className="py-12 lg:py-20 px-4 lg:px-20">
         <div className="container mx-auto">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl lg:text-4xl font-bold mb-6 text-gray-800">
-              About Yawa App
-            </h2>
-            <p className=" text-gray-600 text-[1.2rem] lg:text-[2rem] tracking-tight mb-8">
-              Yawa App aims to bridge the gap between citizens and emergency
-              services, fostering safer, more aware communities.
-            </p>
-            <Link href="/about">
-              <Button
-                variant="outline"
-                size="lg"
-                className="text-base lg:text-xl border-gray-600 text-gray-500 text-[18px]"
-              >
-                Learn More About Us
-              </Button>
-            </Link>
+          <h2 className="text-3xl lg:text-5xl font-bold text-gray-800">
+            Real Stories, Real Impact
+          </h2>
+          <p className=" text-gray-600 text-[1.2rem] lg:text-[1.4rem] leading-8 tracking-tight mt-5">
+            Discover how the YAWA App is changing lives and strengthening
+            communities.
+          </p>
+          <div className="grid md:grid-cols-2 gap-4 md:gap-8 mt-8 md:mt-14">
+            <Card className="py-6">
+              <CardContent className="py-0 flex gap-3">
+                <div className="w-[38px] h-[27px] flex items-center">
+                  <Image
+                    src={"./landing-flag.svg"}
+                    alt="hero iamge"
+                    width={38}
+                    height={27}
+                    className="w-full h-full object-fill"
+                  />
+                </div>
+                <div>
+                  <p className="text-[#4B5563]">
+                    Yawa App has transformed how our community responds to
+                    emergencies. It's incredibly easy to use!
+                  </p>
+                  <p className="text-[#060606] mt-4 leading-7">
+                    <span className="font-bold">Bolaji Adeola</span> <br />{" "}
+                    Community Leader
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="py-6">
+              <CardContent className="py-0 flex gap-3">
+                <div className="w-[38px] h-[27px] flex items-center">
+                  <Image
+                    src={"./landing-flag.svg"}
+                    alt="hero iamge"
+                    width={38}
+                    height={27}
+                    className="w-full h-full object-fill"
+                  />
+                </div>
+                <div>
+                  <p className="text-[#4B5563]">
+                    Yawa App has transformed how our community responds to
+                    emergencies. It's incredibly easy to use!
+                  </p>
+                  <p className="text-[#060606] mt-4 leading-7">
+                    <span className="font-bold">Bolaji Adeola</span> <br />{" "}
+                    Community Leader
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -337,34 +348,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* ====== Blog section ============ */}
-      <BlogSection />
     </div>
-  );
-}
-
-function FeatureCard({
-  icon,
-  title,
-  description,
-}: {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-}) {
-  return (
-    <Card>
-      <CardContent className="p-6">
-        <div className="my-4">{icon}</div>
-        <h3 className="text-xl lg:text-3xl font-bold mb-2 text-gray-800 tracking-tight">
-          {title}
-        </h3>
-        <p className="text-gray-600 text-[1.2rem] lg:text-[1.8rem] tracking-tight">
-          {description}
-        </p>
-      </CardContent>
-    </Card>
   );
 }
 
