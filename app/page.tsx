@@ -247,7 +247,7 @@ export default function Home() {
             </div>
 
             <Image
-              src={"./ipad-landscape.svg"}
+              src={"./ipad.svg"}
               alt="hero iamge"
               width={559}
               height={466}
