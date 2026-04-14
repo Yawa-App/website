@@ -134,7 +134,7 @@ export default function Home() {
               <div className="flex gap-5">
                 <div className="rounded-full bg-[#E0E6F9] w-[60px] h-[60px] flex items-center justify-center shrink-0">
                   <Image
-                    src={"./vector.svg"}
+                    src={"./vector_1.svg"}
                     alt="icon"
                     width={24}
                     height={24}
@@ -165,7 +165,7 @@ export default function Home() {
               <div className="flex gap-5">
                 <div className="rounded-full bg-[#E8E0F9] w-[60px] h-[60px] flex items-center justify-center shrink-0">
                   <Image
-                    src={"./vector-2.svg"}
+                    src={"./vector_2.svg"}
                     alt="icon"
                     width={24}
                     height={24}
@@ -195,7 +195,7 @@ export default function Home() {
               <div className="flex gap-5">
                 <div className="rounded-full bg-[#E0F4F9] w-[60px] h-[60px] flex items-center justify-center shrink-0">
                   <Image
-                    src={"./vector-3.svg"}
+                    src={"./vector_3.svg"}
                     alt="icon"
                     width={24}
                     height={24}
