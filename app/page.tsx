@@ -258,25 +258,62 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-12 lg:py-20 px-4 bg-gray-50">
+      <section className="py-12 lg:py-20 px-4 lg:px-20">
         <div className="container mx-auto">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl lg:text-4xl font-bold mb-6 text-gray-800">
-              About Yawa App
-            </h2>
-            <p className=" text-gray-600 text-[1.2rem] lg:text-[2rem] tracking-tight mb-8">
-              Yawa App aims to bridge the gap between citizens and emergency
-              services, fostering safer, more aware communities.
-            </p>
-            <Link href="/about">
-              <Button
-                variant="outline"
-                size="lg"
-                className="text-base lg:text-xl border-gray-600 text-gray-500 text-[18px]"
-              >
-                Learn More About Us
-              </Button>
-            </Link>
+          <h2 className="text-3xl lg:text-5xl font-bold text-gray-800">
+            Real Stories, Real Impact
+          </h2>
+          <p className=" text-gray-600 text-[1.2rem] lg:text-[1.4rem] leading-8 tracking-tight mt-5">
+            Discover how the YAWA App is changing lives and strengthening
+            communities.
+          </p>
+          <div className="grid md:grid-cols-2 gap-4 md:gap-8 mt-8 md:mt-14">
+            <Card className="py-6">
+              <CardContent className="py-0 flex gap-3">
+                <div className="w-[38px] h-[27px] flex items-center">
+                  <Image
+                    src={"./landing-flag.svg"}
+                    alt="hero iamge"
+                    width={38}
+                    height={27}
+                    className="w-full h-full object-fill"
+                  />
+                </div>
+                <div>
+                  <p className="text-[#4B5563]">
+                    Yawa App has transformed how our community responds to
+                    emergencies. It's incredibly easy to use!
+                  </p>
+                  <p className="text-[#060606] mt-4 leading-7">
+                    <span className="font-bold">Bolaji Adeola</span> <br />{" "}
+                    Community Leader
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="py-6">
+              <CardContent className="py-0 flex gap-3">
+                <div className="w-[38px] h-[27px] flex items-center">
+                  <Image
+                    src={"./landing-flag.svg"}
+                    alt="hero iamge"
+                    width={38}
+                    height={27}
+                    className="w-full h-full object-fill"
+                  />
+                </div>
+                <div>
+                  <p className="text-[#4B5563]">
+                    Yawa App has transformed how our community responds to
+                    emergencies. It's incredibly easy to use!
+                  </p>
+                  <p className="text-[#060606] mt-4 leading-7">
+                    <span className="font-bold">Bolaji Adeola</span> <br />{" "}
+                    Community Leader
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -311,34 +348,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* ====== Blog section ============ */}
-      <BlogSection />
     </div>
-  );
-}
-
-function FeatureCard({
-  icon,
-  title,
-  description,
-}: {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-}) {
-  return (
-    <Card>
-      <CardContent className="p-6">
-        <div className="my-4">{icon}</div>
-        <h3 className="text-xl lg:text-3xl font-bold mb-2 text-gray-800 tracking-tight">
-          {title}
-        </h3>
-        <p className="text-gray-600 text-[1.2rem] lg:text-[1.8rem] tracking-tight">
-          {description}
-        </p>
-      </CardContent>
-    </Card>
   );
 }
 
