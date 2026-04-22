@@ -40,9 +40,9 @@ export function Navigation() {
         </button>
 
         <div
-          className={`${isOpen ? "block" : "hidden"} lg:block absolute lg:relative top-16 lg:top-0 left-0 right-0 bg-white lg:bg-transparent`}
+          className={`${isOpen ? "block" : "hidden"} lg:block absolute lg:relative top-16 lg:top-0 left-0 right-0 bg-white md:bg-transparent`}
         >
-          <div className="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-8 p-4 lg:py-3 lg:px-8 lg:rounded-full bg-white/80">
+          <div className="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-8 p-4 lg:py-3 lg:px-8 lg:rounded-full bg-white/80 md:bg-[#F1FAFC]">
             {/* <Link href="/about" className="hover:text-[#03BDE9] text-gray-600">
               About
             </Link> */}
@@ -59,11 +59,11 @@ export function Navigation() {
               href="/how-it-works"
               className="hover:text-[#03BDE9] text-gray-600"
             >
-              How It Works
+              Business/Enterprise
             </Link>
           </div>
         </div>
-        <Button className="w-full hidden lg:block lg:w-auto bg-[#03BDE9] hover:bg-[#03BDE9]/90">
+        <Button className="w-full hidden lg:block lg:w-auto bg-[#FFFFFF] rounded-xl text-[#5E5E5E]">
           Download Now
         </Button>
       </nav>
